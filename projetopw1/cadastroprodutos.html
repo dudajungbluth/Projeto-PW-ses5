@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="Website Icon" type="png" href="css/imagens/pradalogo.png">
+  <title>GERENCIA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" type="text/css" href="css/ProjetoPW.css">
+  <script src="https://kit.fontawesome.com/e9ad9d0028.js" crossorigin="anonymous"></script>
+</head>
+<body class="cadastrodeprodutos">
+  <div id="loginOverlay">
+    <div class="login-container">
+      <form class="formadm">
+        <h2>Login obrigatorio - Adm</h2>
+        <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="attemptLogin()">Entrar</button>
+        </form>
+    </div>
+</div>
+
+ <div class="centre">
+    <h1 class="tit"> Bem vindo gerente da loja de roupas Prada, cadastre novos pordutos aqui:</h1>
+    <p>Informe o nome da peça, o preço e a imagem ilustrativa da peça</p> 
+    <form class="formulario"> 
+      <p>Nome:</p>
+      <input name="nome" type="text" class="nomeprod" required><br><br>
+  
+      <p>Preço:</p>
+      <input name="preco" type="number" class="precoprod" step="0.01" required><br><br>
+  
+      <p>URL da imagem:</p>
+      <input name="imagem" class="imagemprod" required><br><br>
+      
+      <div class="error"></div>
+      
+      
+      <button class="produtobutton">Adicionar Produto</button>
+      
+   
+    </form>
+
+    <p>Excluir produto com id:</p>
+    <input type="text" id="inputId" placeholder="Insira o ID do produto">
+    <button id="remove">Remover Produto</button>
+    
+
+<div class="tabelaprodutos">
+  
+  <h1>TABELA DE PRODUTOS CADASTRADOS:</h1>
+  <button class="carrega">Recarregar</button>
+  <table class="tabela">
+    
+  </table>
+
+  <hr>
+</div>
+
+  
+    
+ </div>  
+   
+ 
+  <script src="js/cadastroprodutos.js" async></script>
+  <script src="js/adm.js" async></script>
+</body>
+</html>
